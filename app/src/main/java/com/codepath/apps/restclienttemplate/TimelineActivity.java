@@ -50,7 +50,7 @@ public class TimelineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timeline);
 
         client = TwitterApp.getRestClient(this);
-        final TweetDao tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
+        tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
 
 
         //you imported a dependency to scroll up refresh
@@ -181,7 +181,7 @@ public class TimelineActivity extends AppCompatActivity {
                             Log.i(TAG,"Saving data into Room Database");
                             //insert users
                             List<User> usersFromNetwork = User.fromJsonTweetArray(tweetsFromNetwork);
-                            String test = usersFromNetwork.get(0).toString();
+                            String test = usersFromNetwork.get(0).name;
                             Log.i(TAG, test);
                             tweetDao.insertModel(usersFromNetwork.toArray(new User[0]));
                             //insert tweets next
