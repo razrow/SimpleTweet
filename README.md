@@ -28,7 +28,7 @@ The following **optional** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/razrow/Flixster/blob/master/app/flicksYoutube.gif' title='flicksYoutube' width='' alt='Video Walkthrough' />
+<img src='https://github.com/razrow/SimpleTweet/blob/master/SimpleTweet.gif' title='flicksYoutube' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
